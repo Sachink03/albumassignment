@@ -166,7 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
     </div>
   </form>
 
-  <!-- Gallery -->
+  <!-- Gallery sach -->
   <div class="gallery">
     <?php
       $images = glob("uploads/*.{jpg,jpeg,png,gif}", GLOB_BRACE);
