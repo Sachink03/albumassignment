@@ -103,7 +103,6 @@ $result = $conn->query($sql);
   <?php endif; ?>
 </div>
 
-<!-- Modal -->
 <div id="imageModal" class="modal" onclick="closeModal()">
   <span class="modal-close">&times;</span>
   <img class="modal-content" id="modalImg">
