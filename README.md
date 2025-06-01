@@ -1,15 +1,8 @@
 # albumassignment
-A simple and elegant photo album web application that allows users to upload their images and view them in beautiful, paginated albums. Built for fast performance and an intuitive user experience.
-Upload multiple images (6 at a time)
+this is a simple photo album that allow user to upload there images display in 6 images onper page 3 images on left side and 3 on right side, layout is vertically to show images
 
-Automatic album creation
+index.php : fot upload images and show on web 
 
-Paginated album view (6 images per page)
+style.css : style for album page
 
-Responsive and mobile-friendly UI
-
-Easy navigation with previous/next controls
-
-languages: javascript, HTML5, CSS3, php
-
-Database: MySQL 
+script.js :for preview the image befors upload image
