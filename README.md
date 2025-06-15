@@ -5,4 +5,6 @@ index.php : fot upload images and show on web
 
 style.css : style for album page
 
+turn.min.js : page effect on album 
+
 script.js :for preview the image befors upload image

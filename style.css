@@ -1,97 +1,51 @@
+    body {
+  background: url('backgrounds/album-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+
+    #flipbook {
+  border: 15px solid #5c3a21;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background: #fffbe9;
+}
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    text-align: center;
-    background-color: #f2f2f2;
+  animation: fadeIn 1s ease-in-out;
 }
 
-h1 {
-    margin-bottom: 20px;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.upload-form {
-    margin-bottom: 20px;
-}
-
-.upload-form input[type="file"] {
-    margin-right: 10px;
-}
-
-.error {
-    color: red;
-}
-
-.gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.column img {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .gallery {
-        flex-direction: column;
+    .page {
+      width: 400px;
+      height: 500px;
+      background-color: white;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
     }
-    .column {
-        width: 100%;
+
+    button {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      margin: 10px;
+      cursor: pointer;
     }
-}
 
-.pagination {
-    margin-top: 20px;
-}
-
-.pagination a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: blue;
-}
-input[type="file"] {
-  display: inline-block;
-  padding: 8px 12px;
-  border: 2px solid #007bff;
-  border-radius: 6px;
-  background-color: #f8f9fa;
-  color: #333;
-  font-size: 14px;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-}
-button[type="submit"] {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 9px 18px;
-  background-color: #007bff;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-#preview {
-    display: none;
-    max-width: 150px;
-    margin: 10px auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
+    button:hover {
+      background-color: #0056b3;
+    }
